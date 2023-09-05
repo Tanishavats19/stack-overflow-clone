@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 80;
 const path = require('path')
 const db = require('./db')
-
+const router = require('./routers')
 
 //db connection using mongoose
 db.connect();
@@ -23,8 +23,9 @@ app.use((req, res, next) => {
     next();
   });
 
-//api
 
+//api
+app.use('/api', router)
 
 
 //static components
