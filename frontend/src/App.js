@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import Header from './frontend/components/Header';
+import Header from './frontend-comp/components/Header';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Whole from './frontend/components/Whole';
-import Question from './frontend/components/Question';
-import ViewQuestion from './frontend/components/ViewQuestion';
-import Login from './frontend/Authentication/Login';
+import Whole from './frontend-comp/components/Whole';
+import Question from './frontend-comp/components/Question';
+import ViewQuestion from './frontend-comp/components/ViewQuestion';
+import Login from './frontend-comp/Authentication/Login';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/UserSlice';
 import { auth } from './firebase';
