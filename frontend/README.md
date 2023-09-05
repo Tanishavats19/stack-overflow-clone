@@ -1,6 +1,22 @@
-# Getting Started with Create React App and Redux
+# STACKOVERFLOW CLONE APP
+A stack overflow Clone made using MERN Stack.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+### FrontEnd - React
+### Backend - Node.js
+### Authentication using - Firebase
+### Database - Mongo DB
+
+### Dependencies:
+> @mui/material - for the ui, 
+> @mui/icons-material, 
+> React-quill - for text formatting, 
+> React-router-dom,
+> React-tag-input-component, 
+> React-html-parser, 
+> Firebase - for authentication,
+
+## Demo Video - https://rb.gy/ycjs5
+
 
 ## Available Scripts
 
