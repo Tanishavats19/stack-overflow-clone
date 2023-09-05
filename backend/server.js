@@ -4,9 +4,11 @@ const app = express();
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 80;
 const path = require('path')
+const db = require('./db')
+
 
 //db connection using mongoose
-
+db.connect();
 
 //middleware
 app.use(bodyParser.json({ limit: "500mb" }));
