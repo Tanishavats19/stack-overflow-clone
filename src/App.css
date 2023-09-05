@@ -1,3 +1,649 @@
+/* Default CSS */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 10px;
+  background-color: #0095ff;
+  color: #fff;
+  border: 2px solid #007cd446;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Header CSS */
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 100000000;
+  min-height: 5vh;
+  background-color: #fff;
+  
+  
+}
+
+.header-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 5px 0 grey;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0 10px;
+  
+}
+
+.header-left img {
+  width: 180px;
+  cursor: pointer;
+  padding: 0;
+  object-fit: contain;
+}
+
+.header-left h3 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.header-left h3:hover{
+  background-color: #ddd;
+  border-radius: 33.3333px;
+}
+
+.header-mid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  padding: 10px 10px;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid grey;
+  
+}
+
+.search input{
+  border: none;
+  width: 100%;
+  margin-left: 5px;
+  outline: none;
+}
+
+.search .MuiSvgIcon-root {
+  color: #ccc;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.right-container .MuiSvgIcon-root{
+  color: rgba(0, 0, 0, 0.534);
+  padding: 10px 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+
+.right-container .MuiSvgIcon-root:hover{
+  background-color: #ddd;
+  color: #000;
+
+}
+
+@media screen and (min-width: 768px) { 
+  .header-mid {
+    width: calc(20*2vw);
+  }
+  .search{
+    width: 100%;
+  }
+}
+
+/* Whole Body CSS */
+.stkofl-index{
+  display: flex;
+  min-height: 85vh;
+  min-width: fit-content;
+}
+
+.stkofl-index-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Sidebar CSS */
+.sidebar{
+  display: flex;
+  padding: 20px 0px 10px 10px;
+  height: 100%;
+  flex: 0.5;
+  max-width: 200px;
+  border-right: 1px solid lightgray;
+}
+
+.sidebar-container{
+  margin: 10px 0;
+  display: flex;
+  width: 100%;
+}
+
+.sidebar-options{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.sidebar-option{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+a:hover {
+  color: #000;
+}
+
+.sidebar-option p{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-tag {
+  display: flex;
+  align-content: center;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.link-tag:hover{
+   border-right: 5px solid rgba(245,162,9); /* Stack Overflow color */
+}
+
+.link-tag .MuiSvgIcon-root {
+  font-size: 18px;
+  margin-right: 5px;
+  color: rgba(245,162,9);
+}
+
+.tags {
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0px 20px;
+}
+
+.tags p {
+  margin: 5px 0;
+}
+
+.tags p:hover{
+  color: #000;
+}
+
+
+/* Main Body CSS */
+.main {
+  display: flex;
+  padding: 30px 10px;
+  flex: 0.75;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-top{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.main-top h2 {
+  font-weight: 400;
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main-desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.8);
+  justify-content: space-between;
+  padding: 0 0 10px 0;
+  margin-top: 10px;
+}
+
+.main-filter {
+  display: flex;
+  align-items: center;
+}
+
+.main-tabs {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  margin-right: 20px;
+  border-radius: 3px;
+}
+
+.main-tab {
+  padding: 5px;
+}
+
+.main-tab:hover{
+  background-color: rgba(245,162,9,0.4);
+}
+
+.main-filter-tab {
+  display: flex;
+  padding: 5px;
+  border: 1px solid #0095ff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: small;
+  align-items: center;
+  color: #007cd4;
+}
+
+.main-filter-tab:hover{
+  background-color: #007cd446;
+}
+
+/* Questions List CSS */
+.question-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.question {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+.ques-list {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+
+}
+
+.ques-list-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ques-left{
+  display: flex;
+  margin-right: 25px;
+}
+
+.ques-stats{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: smaller;
+}
+
+.ques-stat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ques-stat p{
+  font-size: large;
+}
+
+.ques-ans{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ques-ans a{
+  color: #0151f0d8;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.ques-ans a:hover{
+  color: #1b418cd8;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.ques-tag {
+  background-color: #007cd446;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 10px 5px;
+  color: #114e79;
+}
+
+.author{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+
+}
+
+.author small {
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 5px;
+
+}
+
+.author-details {
+  display: flex;
+  align-items: center;
+}
+
+.author-details p{
+  margin-left: 5px;
+  font-size: small;
+  color: #0151f0d8;
+}
+
+
+/* -------------Question Card CSS--------------- */
+.add-ques {
+  display: flex;
+  width: 100%;
+  background-color: rgba(238, 238, 238, 0.568);
+  height: 100vh;
+  justify-content: center;
+}
+
+.add-ques-container {
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 800px;
+}
+
+.head-title {
+  display: flex;
+  width: 100%;
+}
+
+.head-title > h1 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.ques-container {
+  display: flex;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(66, 42, 42, 0.19);
+}
+
+.ques-els {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ques-el {
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  font-size: 0.9rem;
+}
+
+.title h3 {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
+.title small {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.title input {
+  margin: 5px 0px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  outline: none;
+}
+
+.title input::placeholder {
+  color: #ddd;
+}
+.title input:focus {
+  border: 1px solid #0054ff;
+  box-shadow: 0 4px 8px 0 #0055ff23, 0 6px 20px 0 #0055ff11;
+}
+
+.quill {
+  height: 100%;
+}
+
+.react-quill {
+  margin: 10px 0;
+  border-radius: 10px;
+  height: 150px;
+  margin-bottom: 45px;
+}
+
+
+.button {
+  max-width: fit-content;
+  margin: 10px 0px;
+}
+
+button:hover {
+  background-color: #053086;
+}
+
+/* ---------View Question CSS---------------- */
+.main-desc {
+  display: flex;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  font-size: small;
+}
+
+.info > p {
+  color: rgba(0, 0, 0, 0.4);
+  margin: 0 10px;
+}
+
+.info > p > span {
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0 5px;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.all-options > .MuiSvgIcon-root {
+  color: rgba(0, 0, 0, 0.25);
+  font-size: large;
+  margin: 5px 0;
+}
+
+pre {
+  display: flex;
+  width: 90px;
+  flex-wrap: wrap;
+}
+
+
+
+
+/* ------- Login page CSS ----------- */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  padding: 30px 0;
+  background-color: #eee;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container p {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.signin-ops {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+}
+
+.signin-op {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(66, 42, 42, 0.19);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.signin-op:hover {
+  box-shadow: 0 4px 8px 0 #0095ff15, 0 6px 20px 0 #0095ff52;
+}
+
+.signin-op p {
+  margin-left: 10px;
+  margin-top: 23px; 
+  font-size: 20px;
+}
+.signin-op img{
+  margin-left: 5px;
+}
+
+.reg {
+  display: flex;
+  margin: 40px 0;
+  width: 300px;
+}
+
+.reg-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(66, 42, 42, 0.19);
+  border-radius: 3px;
+}
+
+.reg-container p{
+  font-size: 18px;
+  margin-right: auto;
+}
+
+.inp-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.inp-field p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.inp-field input {
+  padding: 10px;
+  border: 1px solid #0095ff8e;
+  background-color: transparent;
+  border-radius: 3px;
+  outline: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .main {
+    flex: 0.6;
+  }
+  
+}
+
 .App {
   text-align: center;
 }
