@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import QuestionList from './QuestionList'
 
-function Main() {
+function Main({ques}) {
   return (
     <div className='main'>
         <div className='main-container'>
@@ -14,7 +14,7 @@ function Main() {
                 </Link>
             </div>
             <div className='main-desc'>
-                <p>Questions Stats</p>
+                <p><b>{ques && ques.length}</b> Questions</p>
                 <div className='main-filter'>
                     <div className='main-tabs'>
                         <div className='main-tab'>
@@ -34,12 +34,16 @@ function Main() {
                 </div>
             </div>
             <div className='question-list'>
-                <div className='question'>
-                    <QuestionList/>
-                    <QuestionList/>
-                    <QuestionList/>
-                    <QuestionList/>
-                </div>
+                {
+                    ques?.map((_q) => (
+                        
+                        <div key={_q._id} className='question'>
+                            <QuestionList data={_q}/>
+                         </div>
+                        
+                    ))
+                
+                }
             </div>
         </div>
     </div>
