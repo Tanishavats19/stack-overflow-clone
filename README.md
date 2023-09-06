@@ -1,6 +1,14 @@
 # STACKOVERFLOW CLONE APP
 A stack overflow Clone made using MERN Stack.
 
+### This Application can perform the following functions - 
+1. Login/Register users
+2. preview the list of questions that have been asked till date, latest first
+3. View Each Question and its answers separately
+4. Add Answer to a question
+5. Add a new question with related tags
+6. Sign Out(by clicking at the profile icon on the top right)
+
 ### FrontEnd - React
 ### Backend - Node.js
 ### Authentication using - Firebase
